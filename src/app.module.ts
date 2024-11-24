@@ -9,7 +9,7 @@ import { EventModule } from './event/event.module';
 import { AuthModule } from './auth/auth.module';
 
 @Module({
-  imports: [ConfigModule.forRoot(), TypeOrmModule.forRoot(typeOrmConfig), UserModule, EventModule, AuthModule],
+  imports: [ConfigModule.forRoot({isGlobal: true}), TypeOrmModule.forRoot(typeOrmConfig), UserModule, EventModule, AuthModule],
   controllers: [AppController],
   providers: [AppService],
 })
