@@ -40,7 +40,7 @@ O NestJS é um framework de backend para Node.js que tem ganhado cada vez mais p
 
 ### Ambiente Local
 
-Para a execucao local utilizamos um docker que disponibiliza um postgres.
+Para a execução local utilizamos um docker que disponibiliza um postgres.
 
 ### Ambiente de PROD
 
