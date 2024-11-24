@@ -78,3 +78,20 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+## Endpoints REST
+
+### Criar usuário
+
+Essa rota é utilizada para cadastrar um usuário no sistema administrativo.
+
+```bash
+curl --location 'http://localhost:3000/auth/signup' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "Matheus",
+    "email" : "matheusmbl21@gmail.com",
+    "password" : "123456",
+    "passwordConfirmation": "123456"
+}'
+```
