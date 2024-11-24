@@ -1,5 +1,5 @@
 ## invite-me
-- Backend para o projeto da faculdade UNISAM, que atua como um gerenciador de entrada em eventos.
+- Backend para o projeto da faculdade UNISUAM, que atua como um gerenciador de entrada em eventos.
 
 ## Bibliotecas utilizadas
 
