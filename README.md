@@ -36,6 +36,7 @@ O NestJS é um framework de backend para Node.js que tem ganhado cada vez mais p
 - [NextJS Passaport](https://docs.nestjs.com/recipes/passport)
 - [NextJS Config](https://docs.nestjs.com/techniques/configuration)
 - [NextJS JWT](https://docs.nestjs.com/security/authentication)
+- [NextJS TypeORM](https://docs.nestjs.com/techniques/database)
 
 ### Ambiente Local
 
