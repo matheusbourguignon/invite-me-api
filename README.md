@@ -95,3 +95,30 @@ curl --location 'http://localhost:3000/auth/signup' \
     "passwordConfirmation": "123456"
 }'
 ```
+
+### Autenticar o usuário
+
+Essa rota é utilizada para autenticar o usuário, e gerar o token JWT.
+
+```bash
+curl --location 'http://localhost:3000/auth/signin' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email" : "matheusmbl21@gmail.com",
+    "password" : "123456"
+}'
+```
+
+### Criar evento
+
+Essa rota é utilizada para criar o evento.
+
+```bash
+curl --location 'http://localhost:3000/event/save' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: {{Bearer Token}}' \
+--data '{
+    "name": "Churrasco",
+    "date" : "2024-09-29"
+}'
+```

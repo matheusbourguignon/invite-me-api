@@ -7,9 +7,11 @@ import { typeOrmConfig } from './configs/typeorm.config';
 import { UserModule } from './user/user.module';
 import { EventModule } from './event/event.module';
 import { AuthModule } from './auth/auth.module';
+import { InviteModule } from './invite/invite.module';
+
 
 @Module({
-  imports: [ConfigModule.forRoot({isGlobal: true}), TypeOrmModule.forRoot(typeOrmConfig), UserModule, EventModule, AuthModule],
+  imports: [ConfigModule.forRoot({isGlobal: true}), TypeOrmModule.forRoot(typeOrmConfig), UserModule, EventModule, AuthModule, InviteModule],
   controllers: [AppController],
   providers: [AppService],
 })
