@@ -12,14 +12,23 @@ O NestJS é um framework de backend para Node.js que tem ganhado cada vez mais p
 **Principais vantagens:**
 
 **Baseado em TypeScript:** O NestJS utiliza TypeScript, proporcionando tipagem estática, melhorando a qualidade do código e facilitando a detecção de erros durante o desenvolvimento.
+
 **Arquitetura modular:** Inspirado no Angular, o NestJS adota uma arquitetura modular, promovendo a organização do código em módulos, controladores, serviços e provedores. Isso facilita a manutenção e o teste da aplicação.
+
 **Injeção de dependência:** O framework possui um sistema de injeção de dependência embutido, permitindo que você gerencie as dependências de forma clara e eficiente.
+
 **Suporte a HTTP:** O NestJS oferece suporte nativo para HTTP, facilitando a criação de APIs RESTful.
+
 **Comunidade ativa:** Possui uma comunidade crescente e ativa, o que significa que você encontrará diversos recursos, tutoriais e bibliotecas para auxiliar no desenvolvimento.
+
 **Escalabilidade:** A arquitetura modular e a utilização de padrões de projeto como o CQRS (Command Query Responsibility Segregation) e Event Sourcing permitem construir aplicações altamente escaláveis.
+
 **Testável:** O NestJS facilita a escrita de testes unitários e de integração, garantindo a qualidade do código.
+
 **Extensibilidade:** Permite a utilização de diversas bibliotecas e ferramentas do ecossistema Node.js, oferecendo grande flexibilidade.
+
 **Desenvolvimento rápido:** A estrutura bem definida e os recursos prontos para uso agilizam o desenvolvimento de novas funcionalidades.
+
 **Produtividade:** Com o NestJS, você pode criar aplicações robustas e escaláveis de forma mais rápida e eficiente.
 
 ### Bibliotecas
