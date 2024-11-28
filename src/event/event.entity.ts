@@ -3,6 +3,7 @@ import { Invite } from "../invite/invite.entity";
 
 @Entity()
 export class Event extends BaseEntity {
+  [x: string]: any;
   @PrimaryGeneratedColumn('uuid')
 
   id: string;

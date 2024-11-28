@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, Unique, ManyToOne, JoinColumn } from 'typeorm';
-import { User } from '../user/user.entity';  // Importando a entidade User
-import { Event } from '../event/event.entity';  // Importando a entidade Event
+import { User } from '../user/user.entity';
+import { Event } from '../event/event.entity';
 
 
 @Entity()
@@ -22,13 +22,12 @@ export class CheckIn {
   @UpdateDateColumn({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP', onUpdate: 'CURRENT_TIMESTAMP' })
   updatedAt: Date;
 
-  // Relacionamento com o User (Many-to-One)
+  
   @ManyToOne(() => User, user => user.checkIns, { nullable: false })
   @JoinColumn({ name: 'userId' })  // Nome da coluna de referência
   user: User;
 
-  // Relacionamento com o Event (Many-to-One)
   @ManyToOne(() => Event, event => event.checkIns, { nullable: false })
-  @JoinColumn({ name: 'eventId' })  // Nome da coluna de referência
+  @JoinColumn({ name: 'eventId' })  
   event: Event;
 }
