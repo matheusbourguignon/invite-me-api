@@ -1,5 +1,5 @@
-import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
-
+import { BaseEntity, Column, Entity, PrimaryGeneratedColumn, ManyToOne } from "typeorm";
+import { Event } from "../event/event.entity";
 
 @Entity()
 export class Invite extends BaseEntity {
@@ -13,5 +13,6 @@ export class Invite extends BaseEntity {
   @Column({ nullable: false, type: 'varchar', length: 200 })
   name: string;
 
-
+  @ManyToOne(() => Event, (event) => event.invites, { onDelete: 'CASCADE' })
+  event: Event;
 }

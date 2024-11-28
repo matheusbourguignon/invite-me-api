@@ -1,5 +1,5 @@
-import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
-
+import { BaseEntity, Column, Entity, PrimaryGeneratedColumn, OneToMany  } from "typeorm";
+import { Invite } from "../invite/invite.entity";
 
 @Entity()
 export class Event extends BaseEntity {
@@ -13,5 +13,6 @@ export class Event extends BaseEntity {
   @Column({ nullable: false, type: 'date'})
   date: Date;
 
-
+  @OneToMany(() => Invite, (invite) => invite.event)
+  invites: Invite[]
 }
